@@ -22,16 +22,22 @@ if( $_SERVER['REQUEST_METHOD'] !== 'POST'){
   echo "Page not found or wrong HTTP request method is used"; exit();
 }
 
+// get the HTTP POST body of the request
 $request_body = file_get_contents('php://input');
 header('Content-Type: application/json');
-
+// set response's content type as JSON
 $charge_result = chargeAPI($api_url, $server_key, $request_body);
-
+// set the response http status code
 http_response_code($charge_result['http_code']);
-
+// then print out the response body
 echo $charge_result['body'];
 
-
+/**
+ * call charge API using Curl
+ * @param string  $api_url
+ * @param string  $server_key
+ * @param string  $request_body
+ */
 function chargeAPI($api_url, $server_key, $request_body){
   $ch = curl_init();
   $curl_options = array(
@@ -39,8 +45,7 @@ function chargeAPI($api_url, $server_key, $request_body){
     CURLOPT_RETURNTRANSFER => 1,
     CURLOPT_POST => 1,
     CURLOPT_HEADER => 0,
-
-
+    // Add header to the request, including Authorization generated from server key
     CURLOPT_HTTPHEADER => array(
       'Content-Type: application/json',
       'Accept: application/json',
