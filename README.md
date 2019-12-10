@@ -1,7 +1,8 @@
-<<<<<<< HEAD
-# echo Kostku-midtrans
+# Kostku-midtrans
 
-Description
+This is final project payment midtrans serverless PHP using Heroku
+
+# Description
 
 This is a example mobile SDK server for Midtrans's iOS and Android SDK, as an implementation reference to use the mobile sdk. Please read more in Documentation of Midtrans mobile SDK.
 Purpose
@@ -24,7 +25,7 @@ The response of API will be printed/returned to client as is. Example response t
     "redirect_url": "https://app.sandbox.midtrans.com/snap/v2/vtweb/413ae932-471d-4c41-bfb4-e558cc271dcc"
 }
 
-Usage
+# Usage
 
 Edit file charge/index.php, insert your Midtrans Account Server Key to '<server key>'. Upload these to your host, and make sure the url <url where you host this>/charge/index.php can be accessed from the mobile app.
 
@@ -34,8 +35,4 @@ Set <url where you host this>/charge/index.php as merchant base url in mobile SD
 
 
 =======
-# Kostku-midtrans
-<h1> Final Project 2 </h1>
 
-Payment gateway integration Midtrans 
->>>>>>> 838c8b699a801d8ea2f0277aea5d85e3a8355b40
