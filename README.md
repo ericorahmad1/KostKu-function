@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # echo Kostku-midtrans
 
 Description
@@ -32,3 +33,9 @@ Set <url where you host this>/charge/index.php as merchant base url in mobile SD
     Advanced Tips: You can also configure your HTTP server to route <url where you host this>/charge/ url to /charge/index.php file. So the merchant base url can be just configured as <url where you host this>/(without charge/index.php, because SDK will automatically convert it to <url where you host this>/charge/ then your server will route to /charge/index.php/).
 
 
+=======
+# Kostku-midtrans
+<h1> Final Project 2 </h1>
+
+Payment gateway integration Midtrans 
+>>>>>>> 838c8b699a801d8ea2f0277aea5d85e3a8355b40
