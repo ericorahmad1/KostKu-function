@@ -1,17 +1,10 @@
 {
     "name": "erico/kostku_midtrans",
-    "require": {
-        "php": "^7.2",
-        "heroku/heroku-buildpack-php": "^164.0"
-    },
-    "require-dev": {
-        "heroku/heroku-buildpack-php": "^164.0"
-    },
-    "license": "kostku",
     "authors": [
         {
             "name": "ericorahmad1",
             "email": "ericorahmad1@gmail.com"
         }
-    ]
+    ],
+    "require": {}
 }
